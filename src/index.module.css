@@ -1,0 +1,285 @@
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.container {
+  width: 60%;
+  margin: 0 auto;
+  text-align: left;
+  padding: 20px;
+}
+
+.flexContainer {
+  display: flex;
+  align-items: center;
+}
+
+.filterContainerSpan,
+.filterContainerCheckBox {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1.1em;
+}
+
+h1 {
+  text-align: left;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 700;
+}
+
+.inputContainer {
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.listContainer {
+  background: #ededed;
+}
+
+.todoName {
+  margin-left: 10px;
+}
+
+.todoDate {
+  margin-left: 10px;
+}
+
+.todoChecked {
+  color: grey;
+}
+
+.todoDate {
+  margin-left: 10px;
+  font-size: 0.8em;
+  color: darkgrey;
+}
+
+.visibleDescription {
+  font-size: 0.9em;
+  color: rgb(0, 0, 0);
+  margin-top: 5px;
+}
+
+.filterContainer {
+  margin-top: 10px;
+}
+
+.taskInput {
+  width: 48em;
+}
+
+.descriptionInput {
+  width: 98%;
+  height: 4.5em;
+  padding: 7px;
+  font-size: 1em;
+  vertical-align: top;
+  line-height: 1;
+  position: relative;
+  overflow-wrap: break-word;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 400;
+}
+
+.taskInput,
+.addButton1000,
+.addButton {
+  height: 40px;
+  padding: 0 7px;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+  overflow-wrap: break-word;
+}
+
+.todoDate {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 400;
+  font-size: 0.8em;
+  margin-left: 10px;
+  font-size: 0.8em;
+  color: darkgrey;
+}
+.visibleDescription {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 400;
+  font-size: 0.9em;
+  color: #565656;
+  overflow-wrap: break-word;
+}
+.addButton,
+.addButton1000 {
+  border-radius: 0.7em;
+  border: 0;
+  margin-left: 0.8em;
+  width: 7em;
+  border-radius: 1px;
+  color: white;
+  transition: 0.2s linear;
+  font-family: "Nunito Sans", sans-serif;
+  background: #ccc;
+}
+
+.addButton:hover {
+  box-shadow: #aeaeae 0 0px 0px 40px inset;
+}
+.descriptionInput::placeholder {
+  text-align: left;
+  position: absolute;
+  top: 7px;
+  left: 7px;
+}
+
+.deleteButton {
+  background-color: rgb(230, 0, 0);
+  color: white;
+  position: absolute;
+  right: 0;
+  top: 0;
+  border-radius: 0.7em;
+  border: 0;
+  margin-left: 0.1em;
+  width: 7em;
+  border-radius: 1px;
+  height: 43px;
+  position: absolute;
+  padding: 0 7px;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+}
+.deleteButton:hover {
+  box-shadow: #9b0101 0 0px 0px 40px inset;
+}
+
+li:hover .deleteButton {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.hint {
+  cursor: pointer;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+}
+
+.arrow-up {
+  transform: rotate(180deg);
+}
+
+.hintText {
+  padding: 1px;
+  margin-top: 1px;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+}
+
+li {
+  position: relative;
+  padding: 10px;
+  cursor: pointer;
+}
+
+li.checked {
+  color: rgb(143, 142, 142);
+}
+
+.switchDescription {
+  margin-left: 10px;
+  cursor: pointer;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  width: 60%;
+}
+.filtersText {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 400;
+}
+.liMessage {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 1em;
+}
+.severityText {
+  font-family: "Nunito Sans", sans-serif;
+}
+.severityLabel {
+  font-family: "Nunito Sans", sans-serif;
+}
+
+.todoItem {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: column; 
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin: 5px 0;
+  background-color: #f9f9f9;
+  width: 100%; 
+  box-sizing: border-box; 
+}
+
+.todoContent {
+  flex-grow: 1;
+  font-family: "Nunito Sans", sans-serif;
+  margin-left: 10px;
+  overflow-wrap: break-word; 
+  word-wrap: break-word;
+}
+
+.todoName {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: bold;
+  font-size: 1.1em;
+  display: block;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  word-break: break-word;
+}
+
+.todoSeverity{
+  display: block;
+  font-style: italic;
+  color: #555;
+  margin-top: 5px;
+  margin-left: 10px;
+}
+
+.todoDate {
+  font-size: 0.9em;
+  color: #888;
+  margin-top: 5px;
+}
+.hideText {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 1.1em;
+}
+.findInput {
+  margin-left: 0.5em 0;
+  padding: 5px; 
+  border: 1px solid #ccc; 
+  border-radius: 4px;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 0.9em;
+}
+.toggleArrow {
+  cursor: pointer;
+  margin-left: 5px; 
+}
+
+.severityContainer {
+  margin-top: 10px; 
+}
+.filterText{
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 1.1em;
+}
+.importanceText{
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 1.1em;
+}
+
